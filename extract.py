@@ -31,5 +31,5 @@ def cell(img, pos):
 
 if __name__ == '__main__':
     img = Image.open("pixelart.png")
-    icons = [cell(img, (x,y)) for x in range(ICONS_MATRIX_SIZE[0]) for y in range(ICONS_MATRIX_SIZE[1])]
+    icons = [cell(img, (x,y)) for y in range(ICONS_MATRIX_SIZE[1]) for x in range(ICONS_MATRIX_SIZE[0])]
     print(f"icons = {icons}")
